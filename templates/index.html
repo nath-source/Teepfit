@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teepfit - Your Fitness Journey</title>
+
+  <link rel="shortcut icon" href="./static/aperture-outline.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./static/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+  <link rel="preload" as="image" href="./static/assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./static/assets/images/heart-rate.svg">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/" class="logo">
+        <ion-icon name="aperture-outline" aria-hidden="true"></ion-icon>
+
+        <span class="span">Teepfit</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+
+      <section class="section hero bg-dark " id="home" aria-label="hero" data-section
+        style="background-image: url('./static/assets/images/hero-bg.png');">
+        <div class="header2 header3">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Your Fitness Journey</h1>
+
+            <p class="section-text">
+              Discover Teepfit, the ultimate fitness app for mastering bodyweight exercises. Whether you’re new to working out or an experienced fitness enthusiast.
+            </p>
+
+            <a href="#class" class="btn2 btn-primary">Get Started</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./static/assets/images/vid-banner.jpg')">
+            <video id="fitnessVideo" src="./static/assets/images/Teepfit-JoinNow.mp4" muted></video>
+            <h2 class="h2 card-title">Explore Fitness Life</h2>
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">Our Classes</p>
+
+          <h2 class="h2 section-title text-center">Strength Training Classes</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./static/assets/images/rock-hard-abs3.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <h3 class="h3">
+                      <a href="{{ url_for('rock_hard_abs') }}" class="card-title">Rock Hard Abs</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Transform your core with our Rock Hard Abs workout program. Designed to target every angle of your abdominal muscles. Perfect for all fitness levels
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">20 Days</p>
+
+                     
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./static/assets/images/abs-2.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <h3 class="h3">
+                      <a href="{{ url_for('six_pack_abs') }}" class="card-title">Six Pack Abs</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Strengthen and tone your core with focused exercises designed to sculpt your abdominal muscles and improve overall stability.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">20 Days</p>
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./static/assets/images/lose-fat.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <h3 class="h3">
+                      <a href="{{ url_for('lose_fat') }}" class="card-title">Lose Belly Fat</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Burn fat and sculpt lean muscle with our dynamic workout designed to maximize calorie burn and improve body composition.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">20 Days</p>
+
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+          </script> Teepfit. All Rights Reserved.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="copyright-link footer-bottom-link has-before">Nathaniel Ademola</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./static/assets/js/script.js" defer></script>
+  <script src="./static/assets/js/main.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navbarHeight = document.querySelector('nav').offsetHeight;
+        const extraPadding = 50; // Adjust this value for desired padding
+    
+        document.querySelectorAll('.grid-item').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - extraPadding;
+    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+
+</body>
+
+</html>

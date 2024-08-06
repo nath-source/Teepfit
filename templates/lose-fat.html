@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teepfit - Your Fitness Journey</title>
+  
+    <link rel="shortcut icon" href="./static/aperture-outline.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./static/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+      rel="stylesheet">
+    <link rel="preload" as="image" href="./static/assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./static/assets/images/heart-rate.svg">
+  </head>
+<body id="top">
+
+  <header class="header" data-header>
+    
+    <div class="container">
+
+      <a href="/" class="logo">
+        <ion-icon name="aperture-outline" aria-hidden="true"></ion-icon>
+
+        <span class="span">Teepfit</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+                <li>
+                <a href="{{ url_for('lose_fat') }}" class="navbar-link active" data-nav-link>Lose Fat</a>
+              </li>
+    
+              <li>
+                <a href="{{ url_for('rock_hard_abs') }}" class="navbar-link" data-nav-link>Rock Hard Abs</a>
+              </li>
+    
+              <li>
+                <a href="{{ url_for('six_pack_abs') }}" class="navbar-link" data-nav-link>Six Pack Abs</a>
+              </li>
+    
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+        <section class="section hero bg-dark" id="home" aria-label="hero" data-section
+          style="background-image: url('./static/assets/images/hero-bg.png')">
+
+          <div class="grid">
+            <a href="#day1" class="grid-item">1</a>
+            <a href="#day2" class="grid-item">2</a>
+            <a href="#day3" class="grid-item">3</a>
+            <a href="#day4" class="grid-item">4</a>
+            <a href="#day5" class="grid-item">5</a>
+            <a href="#day6" class="grid-item">6</a>
+            <a href="#day7" class="grid-item">7</a>
+            <a href="#day8" class="grid-item">8</a>
+            <a href="#day9" class="grid-item">9</a>
+            <a href="#day10" class="grid-item">10</a>
+            <a href="#day11" class="grid-item">11</a>
+            <a href="#day12" class="grid-item">12</a>
+            <a href="#day13" class="grid-item">13</a>
+            <a href="#day14" class="grid-item">14</a>
+            <a href="#day15" class="grid-item">15</a>
+            <a href="#day16" class="grid-item">16</a>
+            <a href="#day17" class="grid-item">17</a>
+            <a href="#day18" class="grid-item">18</a>
+            <a href="#day19" class="grid-item">19</a>
+            <a href="#day20" class="grid-item">20</a>
+        </div>
+
+
+        <div id="day1">
+          <h2 class="gym-text">Day 1</h2>
+          <p class="gym-text-ii">Lose Belly Fat</p>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Standing Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Standing Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="day2">
+          <h2 class="gym-text text2">Day 2</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x6</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x6</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>X10</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="day3">
+          <h2 class="gym-text text2">Day 3</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>X6</h2>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('leg_raises') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+            <div id="day4">
+                <h2 class="gym-text text2">Day 4</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Rest</h2>
+                        </div>
+                        <div class="card-button">
+                            <a href="{{ url_for('high_stepping') }}"><strong>Continue</strong></a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+
+
+
+
+
+        <div id="day5">
+          <h2 class="gym-text text2">Day 5</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="day6">
+          <h2 class="gym-text text2">Day 6</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x22</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="day7"></div>
+          <h2 class="gym-text text2">Day 7</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x22</h2>
+                        <p>Standing Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Standing Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <div id="day8">
+                <h2 class="gym-text text2">Day 8</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Rest</h2>
+                        </div>
+                        <div class="card-button">
+                            <a href="{{ url_for('high_stepping') }}"><strong>Continue</strong></a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+
+
+
+
+            <div id="day9">
+             <h2 class="gym-text text2">Day 9</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x24</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('leg_raises') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x24</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x18</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('leg_raises') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+
+
+
+        <div id="day10">
+            <h2 class="gym-text text2">Day 10</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x6</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x6</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Reverse Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('reverse_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x10</h2>
+                        <p>Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="day11">
+            <h2 class="gym-text text2">Day 11</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x6</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x8</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+            <div id="day12">
+                <h2 class="gym-text text2">Day 12</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Rest</h2>
+                        </div>
+                        <div class="card-button">
+                            <a href="{{ url_for('high_stepping') }}"><strong>Continue</strong></a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+
+
+
+
+
+        <div id="day13">
+            <h2 class="gym-text text2">Day 13</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x24</h2>
+                        <p>Standing Bicycles Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x24</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x24</h2>
+                        <p>Standing Bicycle Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('standing_bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x14</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Russian Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('russian_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div id="day14">
+            <h2 class="gym-text text2">Day 14</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('leg_raises') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="day15">
+            <h2 class="gym-text text2">Day 15</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>Heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Leg Raises</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('leg_raises') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Plank</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x20</h2>
+                        <p>heel Touch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+            <div id="day16">
+                <h2 class="gym-text text2">Day 16</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Rest</h2>
+                        </div>
+                        <div class="card-button">
+                            <a href="{{ url_for('high_stepping') }}"><strong>Continue</strong></a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+
+
+
+
+            <div id="day17">
+             <h2 class="gym-text text2">Day 17</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Bicycles Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="day18">
+            <h2 class="gym-text text2">Day 18</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>20s</h2>
+                        <p>High Stepping</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Jumping Jacks</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Sit Ups</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Abdominal Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('abdominal_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x16</h2>
+                        <p>Oblique Twist</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('oblique_twist') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x12</h2>
+                        <p>Bicycles Crunches</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>x26</h2>
+                        <p>Mountain Climber</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Cobra Stretch</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Left</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>30s</h2>
+                        <p>Lying Swing:Right</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+             
+
+             <div id="day19">
+             <h2 class="gym-text text2">Day 19</h2>
+             <div class="card-container">
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>20s</h2>
+                         <p>High Stepping</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('high_stepping') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>30s</h2>
+                         <p>Jumping Jacks</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('jacks') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>x26</h2>
+                         <p>Mountain Climber</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>x14</h2>
+                         <p>Sit Ups</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('sit_ups') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>x20</h2>
+                         <p>Heel Touch</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('heel_touch') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>30s</h2>
+                         <p>Plank</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('plank') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>x12</h2>
+                         <p>Bicycles Crunches</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('bicycle_crunches') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>x26</h2>
+                         <p>Mountain Climber</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('slow_mountain_climber') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>30s</h2>
+                         <p>Cobra Stretch</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('cobra_stretch') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>30s</h2>
+                         <p>Lying Swing:Left</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('lying_swing_left') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <div class="card-content">
+                         <h2>30s</h2>
+                         <p>Lying Swing:Right</p>
+                     </div>
+                     <div class="card-button">
+                         <a href="{{ url_for('lying_swing_right') }}"><strong>Open</strong></a>
+                     </div>
+                 </div>
+             </div>
+            </div>
+
+
+
+
+
+            <div id="day20">
+                <h2 class="gym-text text2">Day 20</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Rest</h2>
+                        </div>
+                        <div class="card-button">
+                            <a href="{{ url_for('workout_finished_lose_fat') }}"><strong>Continue</strong></a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+
+    
+
+        </section>
+    </article> 
+  </main>
+   
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+            &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> Teepfit. All Rights Reserved.
+          </p>
+  
+          <ul class="footer-bottom-list">
+
+            <li>
+              <a href="#" class="copyright-link footer-bottom-link has-before">Nathaniel Ademola</a>
+            </li>
+  
+          </ul>
+
+      </div>
+    </div>
+
+  </footer>
+  
+  
+    <!-- 
+      - #BACK TO TOP
+    -->
+  
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+    </a>
+  
+  
+    <!-- 
+      - custom js link
+    -->
+    <script src="./static/assets/js/script.js" defer></script>
+    <script src="./static/assets/js/main.js" defer></script>
+  
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+        
+        
+
+</body>
+
+</html>
